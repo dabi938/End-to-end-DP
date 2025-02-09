@@ -38,7 +38,7 @@ Step 3: Create a new application to get api_id and api_hash <br>
 
 Step 4: Use these credentials in the Telethon client setup <br>
 
-## Telethon to Extracted date, message text, and user ID <br>
+Telethon to Extracted date, message text, and user ID
 
 ## 4. Data Cleaning
 
