@@ -93,7 +93,10 @@ VALUES (%s, %s, %s, %s, %s, %s, %s, %s);
 # Telegram Data Insertion
 
 INSERT INTO telegram_messages (date, message, user_id)
-VALUES (%s, %s, %s); 7. Development Tools
+VALUES (%s, %s, %s);
+
+# 7. Development Tools
+
 VS Code - Used for writing and testing Python scripts
 Jupyter Notebook - Used for interactive data analysis and debugging
 PostgreSQL - Database for storing structured data
