@@ -97,11 +97,15 @@ VALUES (%s, %s, %s);
 
 # 7. Development Tools
 
-VS Code - Used for writing and testing Python scripts
-Jupyter Notebook - Used for interactive data analysis and debugging
-PostgreSQL - Database for storing structured data
-Power BI - Visualization and reporting
-GitHub - Version control and collaboration
+# VS Code - Used for writing and testing Python scripts
+
+# Jupyter Notebook - Used for interactive data analysis and debugging
+
+# PostgreSQL - Database for storing structured data
+
+# Power BI - Visualization and reporting
+
+# GitHub - Version control and collaboration
 
 ## 8. Data Visualization
 
