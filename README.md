@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-## This project builds an ETL (Extract, Transform, Load) pipeline to integrate Online Retail data from UCI Machine Learning Repository with Telegram messages from multiple channels(3 channels). The goal is to automate data collection, clean and store it in PostgreSQL, and visualize insights using Power BI. The pipeline is designed to enhance decision-making by combining structured Online Retail transactions with unstructured customer interactions from Telegram.
+This project builds an ETL (Extract, Transform, Load) pipeline to integrate Online Retail data from UCI Machine Learning Repository with Telegram messages from multiple channels(3 channels). The goal is to automate data collection, clean and store it in PostgreSQL, and visualize insights using Power BI. The pipeline is designed to enhance decision-making by combining structured Online Retail transactions with unstructured customer interactions from Telegram.
 
 ## 2. Data Sources
 
