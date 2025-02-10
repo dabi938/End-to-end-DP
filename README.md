@@ -14,7 +14,7 @@ Link: https://archive.ics.uci.edu/dataset/352/online+retail <br>
 
 Fields: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
 
-# Telegram Data
+### Telegram Data
 
 Channels: easybuyethiopia, Ecommerceaddis, jiji_shop_ethiopia <br>
 Extracted Fields: Date, Message, User ID <br>
@@ -23,12 +23,12 @@ Extracted Fields: Date, Message, User ID <br>
 
 ## 3. Data Extraction
 
-# Online Retail Data Extraction
+### Online Retail Data Extraction
 
 Loaded CSV using pandas (read_csv()) <br>
 Validated and cleaned before transformation
 
-# Telegram Data Extraction
+### Telegram Data Extraction
 
 Step 1: Go to https://my.telegram.org <br>
 
@@ -42,13 +42,13 @@ Telethon to Extracted date, message text, and user ID
 
 ## 4. Data Cleaning
 
-# Online RetailData
+### Online RetailData
 
 Dropped missing values (dropna())
 Removed duplicates (drop_duplicates())
 Converted InvoiceDate to datetime, UnitPrice to float, and CustomerID to int
 
-# Telegram Data
+### Telegram Data
 
 Preserved negative User IDs for groups
 Standardized date format (datetime)
@@ -59,7 +59,7 @@ Ensured user_id values fit within PostgreSQL BIGINT limits
 
 ## 5. Database Schema
 
-# Rental_Dataset Table
+### Rental_Dataset Table
 
 CREATE TABLE Rental_Dataset (
 order_id SERIAL PRIMARY KEY,
@@ -73,7 +73,7 @@ CustomerID BIGINT,
 Country VARCHAR(100)
 );
 
-# telegram_messages Table
+### telegram_messages Table
 
 CREATE TABLE telegram_messages (
 message_id SERIAL PRIMARY KEY,
@@ -86,24 +86,24 @@ user_id BIGINT
 
 ## 6. Data Loading
 
-# Database Connection
+### Database Connection
 
 Connected using psycopg2 <br>
 Created tables with appropriate constraints
 
-# Online RetailData Insertion
+### Online RetailData Insertion
 
 INSERT INTO Rental_Dataset (InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country)
 VALUES (%s, %s, %s, %s, %s, %s, %s, %s);
 
-# Telegram Data Insertion
+### Telegram Data Insertion
 
 INSERT INTO telegram_messages (date, message, user_id)
 VALUES (%s, %s, %s);
 
 ---
 
-# 7. Development Tools
+### 7. Development Tools
 
 VS Code - Used for writing and testing Python scripts <br>
 Jupyter Notebook - Used for interactive data analysis and debugging <br>
