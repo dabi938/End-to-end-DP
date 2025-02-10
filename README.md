@@ -114,5 +114,4 @@ GitHub - Version control and collaboration
 
 Power BI Dashboards <br>
 Online RetailSales Trends (monthly and yearly patterns) <br>
-Customer Segmentation (purchase behavior analysis) <br>
-Telegram Message Analysis (sentiment & trending topics)
+Customer Segmentation (purchase behavior analysis)
