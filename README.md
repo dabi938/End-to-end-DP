@@ -6,7 +6,7 @@ This project builds an ETL (Extract, Transform, Load) pipeline to Visualizing On
 
 ## 2. Data Sources
 
-Online RetailData (UCI Machine Learning Repository) <br>
+### Online RetailData (UCI Machine Learning Repository) <br>
 
 Format: CSV <br>
 
