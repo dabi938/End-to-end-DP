@@ -57,61 +57,13 @@ Ensured user_id values fit within PostgreSQL BIGINT limits
 
 ---
 
-## 5. Database Schema
-
-### Rental_Dataset Table
-
-CREATE TABLE Rental_Dataset (
-order_id SERIAL PRIMARY KEY,
-InvoiceNo VARCHAR(50),
-StockCode VARCHAR(20),
-Description TEXT,
-Quantity INTEGER,
-InvoiceDate TIMESTAMP,
-UnitPrice DECIMAL(10,2),
-CustomerID BIGINT,
-Country VARCHAR(100)
-);
-
-### telegram_messages Table
-
-CREATE TABLE telegram_messages (
-message_id SERIAL PRIMARY KEY,
-date TIMESTAMP,
-message TEXT,
-user_id BIGINT
-);
-
----
-
-## 6. Data Loading
-
-### Database Connection
-
-Connected using psycopg2 <br>
-Created tables with appropriate constraints
-
-### Online RetailData Insertion
-
-INSERT INTO Rental_Dataset (InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country)
-VALUES (%s, %s, %s, %s, %s, %s, %s, %s);
-
-### Telegram Data Insertion
-
-INSERT INTO telegram_messages (date, message, user_id)
-VALUES (%s, %s, %s);
-
----
-
-### 7. Development Tools
+### 5. Development Tools
 
 VS Code - Used for writing and testing Python scripts <br>
 Jupyter Notebook - Used for interactive data analysis and debugging <br>
 PostgreSQL - Database for storing structured data, Power BI - Visualization and reporting <br>
 GitHub - Version control and collaboration
 
-## 8. Data Visualization
+## 6. Data Visualization
 
-Power BI Dashboards <br>
-Online RetailSales Trends (monthly and yearly patterns) <br>
-Customer Segmentation (purchase behavior analysis)
+If you want to access the dashboard, please use [this link](https://app.powerbi.com/groups/me/reports/f98d9180-dd10-4aaf-95f5-2a1406bb89d9/a9aa4c6c7d7a28da0052?experience=power-bi).
